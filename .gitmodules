@@ -1,3 +1,6 @@
 [submodule "bundles/aoe4-map-selector"]
 	path = bundles/aoe4-map-selector
 	url = https://github.com/RisingEmpires/aoe4-map-selector
+[submodule "bundles/caster-manager"]
+	path = bundles/caster-manager
+	url = https://github.com/RisingEmpires/caster-manager
