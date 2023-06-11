@@ -4,3 +4,6 @@
 [submodule "bundles/caster-manager"]
 	path = bundles/caster-manager
 	url = https://github.com/RisingEmpires/caster-manager
+[submodule "bundles/aoe-4-civ-draft"]
+	path = bundles/aoe-4-civ-draft
+	url = https://github.com/RisingEmpires/aoe-4-civ-draft
