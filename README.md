@@ -2,7 +2,6 @@
 
 NodeCG Based project to manage Rising Empires aoe4 streams
 
-
 ### Features:
 
 - Civ Draft Graphic
@@ -13,17 +12,17 @@ NodeCG Based project to manage Rising Empires aoe4 streams
 - Caster Manager
   - Very simple text to showcase who is casting
 
-
 ### Todo:
 
-- Add Twitch Chat
+- Add OBS Lua Script or something to automatically detect when the game is over
 - Countdown timer
 - ~~Integrate Aoe2cm Draft~~ (WebSockets or API) (API Done)
 
   - Add WebSockets for live drafts?
 - Series Score
 
-  - Swap score feature
+  - ~~Swap score feature~~
+  - 2v2 and 2v2 Improved Observer UI support
 - Show maps
 
   - Render based on amount
