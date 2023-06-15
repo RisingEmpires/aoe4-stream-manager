@@ -2,8 +2,6 @@
 
 NodeCG Based project to manage Rising Empires our Age of Empires 4 Streams.
 
-[![Civ Draft 1v1](docs/civ-draft-example.png)](risingempires.gg)
-
 ### Features
 
 - Civ Draft Graphic
