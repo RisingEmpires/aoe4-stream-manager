@@ -10,3 +10,6 @@
 [submodule "bundles/score-display"]
 	path = bundles/score-display
 	url = https://github.com/RisingEmpires/aoe4-score-display
+[submodule "bundles/aoe-4-team-games"]
+	path = bundles/aoe-4-team-games
+	url = https://github.com/RisingEmpires/aoe-4-team-games
