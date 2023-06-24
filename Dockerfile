@@ -30,6 +30,9 @@ ADD "https://api.github.com/repos/RisingEmpires/caster-manager/commits?per_page=
 RUN curl -s https://api.github.com/repos/RisingEmpires/caster-manager/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
 RUN mkdir ./caster-manager && tar -C ./caster-manager -xvf caster-manager.tar && rm -rf caster-manager.tar
 
+ADD "https://api.github.com/repos/RisingEmpires/aoe-4-countdown-timer/commits?per_page=1" latest_commit_countdown-timer
+RUN curl -s https://api.github.com/repos/RisingEmpires/aoe-4-countdown-timer/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
+RUN mkdir ./aoe-4-countdown-timer && tar -C ./aoe-4-countdown-timer -xvf aoe-4-countdown-timer.tar && rm -rf aoe-4-countdown-timer.tar
 
 #COPY --chown=nodecg:nodecg ./bundles /opt/nodecg/bundles
 
