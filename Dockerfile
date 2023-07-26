@@ -34,6 +34,21 @@ ADD "https://api.github.com/repos/RisingEmpires/aoe-4-countdown-timer/commits?pe
 RUN curl -s https://api.github.com/repos/RisingEmpires/aoe-4-countdown-timer/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
 RUN mkdir ./aoe-4-countdown-timer && tar -C ./aoe-4-countdown-timer -xvf aoe-4-countdown-timer.tar && rm -rf aoe-4-countdown-timer.tar
 
+ADD "https://api.github.com/repos/RisingEmpires/twitch-predictions/commits?per_page=1" latest_commit_twitch-predictions
+RUN curl -s https://api.github.com/repos/RisingEmpires/twitch-predictions/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
+RUN mkdir ./twitch-predictions && tar -C ./twitch-predictions -xvf twitch-predictions.tar && rm -rf twitch-predictions.tar
+
+RUN nodecg install RisingEmpires/twitch-bundle
+
+USER root
+WORKDIR /opt/nodecg/bundles/twitch-bundle
+RUN npm install --production
+
+USER nodecg
+
+WORKDIR /opt/nodecg/bundles/
+
+
 #COPY --chown=nodecg:nodecg ./bundles /opt/nodecg/bundles
 
 # COPY --chown=nodecg:nodecg ./assets /opt/nodecg/assets
