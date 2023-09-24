@@ -7,9 +7,24 @@
 [submodule "bundles/aoe-4-civ-draft"]
 	path = bundles/aoe-4-civ-draft
 	url = https://github.com/RisingEmpires/aoe-4-civ-draft
-[submodule "bundles/score-display"]
-	path = bundles/score-display
+[submodule "bundles/aoe4-score-display"]
+	path = bundles/aoe4-score-display
 	url = https://github.com/RisingEmpires/aoe4-score-display
 [submodule "bundles/aoe-4-team-games"]
 	path = bundles/aoe-4-team-games
 	url = https://github.com/RisingEmpires/aoe-4-team-games
+[submodule "bundles/aoe-4-series-manager"]
+	path = bundles/aoe-4-series-manager
+	url = https://github.com/RisingEmpires/aoe-4-series-manager
+[submodule "bundles/twitch-predictions"]
+	path = bundles/twitch-predictions
+	url = https://github.com/RisingEmpires/twitch-predictions
+[submodule "bundles/aoe-4-countdown-timer"]
+	path = bundles/aoe-4-countdown-timer
+	url = https://github.com/RisingEmpires/aoe-4-countdown-timer
+[submodule "bundles/aoe-4-series-manager"]
+	path = bundles/aoe-4-series-manager
+	url = https://github.com/RisingEmpires/aoe-4-series-manager
+[submodule "bundles/aoe-4-series-manager"]
+	path = bundles/aoe-4-series-manager
+	url = https://github.com/RisingEmpires/aoe-4-series-manager

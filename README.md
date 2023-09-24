@@ -82,9 +82,8 @@ You can also make the Dockerfile yourself, although there is some issues with no
 
 ### Todo
 
-- ~~Integrate Aoe2cm Draft~~ (WebSockets or API) (API Done)
+- Integrate Aoe2cm Draft (WebSockets or API) (API Done)
   - Add WebSockets for live drafts?
-  - Add option to import names from aoe2cm aswell. Although not reliable name source since can be random things. And not very useful for Team Games
 - 2v2 Default UI
   - Add which player is playing which Civ similiar to Improved Observer UI
 - Show maps
@@ -92,4 +91,6 @@ You can also make the Dockerfile yourself, although there is some issues with no
   - Change to be per side?
     - Home maps, current played map in middle, etc
 - Add Twitch Prediction integration
-  - Create prediction based on who is playing from Aoe-4-civ-draft. Allow closing it too?
+  - Add on screen graphic to display the Ratio
+- Twitch Chat integration
+  - !addscore command

@@ -24,7 +24,7 @@ RUN mkdir ./aoe4-map-selector && tar -C ./aoe4-map-selector -xvf aoe4-map-select
 
 ADD "https://api.github.com/repos/RisingEmpires/aoe4-score-display/commits?per_page=1" latest_commit_aoe4-score-display
 RUN curl -s https://api.github.com/repos/RisingEmpires/aoe4-score-display/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
-RUN mkdir ./aoe4-score-display && tar -C ./aoe4-score-display -xvf score-display.tar && rm -rf score-display.tar
+RUN mkdir ./aoe4-score-display && tar -C ./aoe4-score-display -xvf aoe4-score-display.tar && rm -rf aoe4-score-display.tar
 
 ADD "https://api.github.com/repos/RisingEmpires/caster-manager/commits?per_page=1" latest_commit_caster-manager
 RUN curl -s https://api.github.com/repos/RisingEmpires/caster-manager/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
@@ -37,6 +37,10 @@ RUN mkdir ./aoe-4-countdown-timer && tar -C ./aoe-4-countdown-timer -xvf aoe-4-c
 ADD "https://api.github.com/repos/RisingEmpires/twitch-predictions/commits?per_page=1" latest_commit_twitch-predictions
 RUN curl -s https://api.github.com/repos/RisingEmpires/twitch-predictions/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
 RUN mkdir ./twitch-predictions && tar -C ./twitch-predictions -xvf twitch-predictions.tar && rm -rf twitch-predictions.tar
+
+ADD "https://api.github.com/repos/RisingEmpires/aoe-4-series-manager/commits?per_page=1" latest_commit_aoe-4-series-manager
+RUN curl -s https://api.github.com/repos/RisingEmpires/aoe-4-series-manager/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
+RUN mkdir ./aoe-4-series-manager && tar -C ./aoe-4-series-manager -xvf aoe-4-series-manager.tar && rm -rf aoe-4-series-manager.tar
 
 RUN nodecg install RisingEmpires/twitch-bundle
 
