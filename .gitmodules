@@ -25,6 +25,3 @@
 [submodule "bundles/aoe-4-series-manager"]
 	path = bundles/aoe-4-series-manager
 	url = https://github.com/RisingEmpires/aoe-4-series-manager
-[submodule "bundles/aoe-4-series-manager"]
-	path = bundles/aoe-4-series-manager
-	url = https://github.com/RisingEmpires/aoe-4-series-manager
