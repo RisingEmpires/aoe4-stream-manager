@@ -42,6 +42,11 @@ ADD "https://api.github.com/repos/RisingEmpires/aoe-4-series-manager/commits?per
 RUN curl -s https://api.github.com/repos/RisingEmpires/aoe-4-series-manager/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
 RUN mkdir ./aoe-4-series-manager && tar -C ./aoe-4-series-manager -xvf aoe-4-series-manager.tar && rm -rf aoe-4-series-manager.tar
 
+ADD "https://api.github.com/repos/RisingEmpires/nodecg-themer/commits?per_page=1" latest_commit_nodecg-themer
+RUN curl -s https://api.github.com/repos/RisingEmpires/nodecg-themer/releases/latest | grep "browser_download_url.*tar" | cut -d : -f 2,3 | tr -d \" | wget -qi -
+RUN mkdir ./nodecg-themer && tar -C ./nodecg-themer -xvf nodecg-themer.tar && rm -rf nodecg-themer.tar
+
+
 RUN nodecg install RisingEmpires/twitch-bundle
 
 USER root
