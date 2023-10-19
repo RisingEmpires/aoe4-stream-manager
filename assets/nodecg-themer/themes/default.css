@@ -290,6 +290,11 @@ body {
     display: none;
 }
 
+.lobbyScore-extraInfo {
+    position: absolute;
+    display: none;
+}
+
 .lobbyScore-leftScore {
     position: absolute;
     transform: translate(-50%, -50%);
