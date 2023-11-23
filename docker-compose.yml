@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    aoe4-stream-manager:
+        container_name: AoE4-Stream-Manager
+        restart: unless-stopped
+        image: aoe4-stream-manager
+        ports:
+            - '9090:9090'
+        volumes:
+            - 'path/to/directory/logs:/opt/nodecg/logs'
+            - 'path/to/directory/db:/opt/nodecg/db'
+            - 'path/to/directory/assets:/opt/nodecg/assets'
+            - 'path/to/directory/cfg:/opt/nodecg/cfg'
