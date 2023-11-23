@@ -1,0 +1,466 @@
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./Montserrat.ttf');
+}
+
+
+body {
+    font-family: Montserrat;
+    color: white;
+}
+
+/* #region Series Manager */
+.series-games {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+}
+
+.series-civPick {
+    width: 35px;
+    border: 2px solid #0000;
+    border-radius: 4%;
+    height: 100%;
+    background: linear-gradient(#191212, #191212) padding-box, linear-gradient(var(--angle),
+            #9c683b,
+            #FFD700) border-box;
+    animation: 8s rotate linear infinite;
+}
+
+.series-game {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.series-civPicks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.series-leftPicks {
+    transform: translate(50%, 0);
+}
+
+.series-rightPicks {
+    transform: translate(-50%, 0);
+}
+
+.series-map {
+    width: 120px;
+    height: 120px;
+}
+
+.series-civLose {
+    filter: brightness(65%);
+}
+
+.series-loseIcon {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 150%;
+
+    top: 47%;
+    left: 50%;
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.series-civContainer {
+    position: relative;
+}
+
+/*#endregion*/
+
+/* #region Civ Draft */
+.draft-civBannedFilter {
+    filter: brightness(65%);
+}
+
+.draft-civBanned {
+    width: 60px;
+    margin: 5px 0px;
+    border: 2px solid #0000;
+    border-radius: 4%;
+    height: 100%;
+    background: linear-gradient(#191212, #191212) padding-box, linear-gradient(var(--angle),
+            #661717,
+            #ff2828) border-box;
+    animation: 8s rotate linear infinite;
+}
+
+.draft-civPicked {
+    width: 140px;
+    margin: 5px 0px;
+    border: 2px solid #0000;
+    border-radius: 4%;
+    background: linear-gradient(#191212, #191212) padding-box, linear-gradient(var(--angle),
+            #9c683b,
+            #FFD700) border-box;
+    animation: 8s rotate linear infinite;
+}
+
+.borderer {
+    border: 1px solid red;
+}
+
+.draft-leftBans {
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    left: 32%;
+}
+
+.draft-rightBans {
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    right: 32%;
+}
+
+.draft-leftPicks {
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+
+.draft-rightPicks {
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    right: 40%;
+}
+
+.draft-rightName {
+    width: 365px;
+    text-align: left;
+    text-transform: uppercase;
+    transform: translate(50%, -50%);
+    font-size: 300%;
+    position: absolute;
+    color: white;
+    top: 58%;
+    right: 34%;
+    font-weight: 900;
+}
+
+.draft-leftName {
+    text-align: right;
+    width: 365px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    position: absolute;
+    color: white;
+    top: 58%;
+    left: 34%;
+    font-weight: 900;
+}
+
+.draft-civContainer {
+    position: relative;
+}
+
+.draft-civName {
+    display: none;
+}
+
+.draft-banned {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 200%;
+
+    top: 47%;
+    left: 50%;
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.draft-leftUnderText {
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+    position: absolute;
+    color: white;
+    top: 64%;
+    left: 38%;
+}
+
+.draft-rightUnderText {
+    transform: translate(50%, -50%);
+    font-size: 250%;
+    position: absolute;
+    color: white;
+    top: 64%;
+    right: 38%;
+}
+
+/*#endregion*/
+
+/* #region Score Display */
+.score-rotate {
+    animation: rotation 120s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.score-rightScore img {
+    animation-direction: reverse;
+}
+
+.score-leftScore {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 45%;
+}
+
+.score-rightScore {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 13%;
+    right: 45%;
+}
+
+.score-scoreContainer img {
+    width: 90px;
+}
+
+.score-scoreContainer {
+    color: white;
+}
+
+.score-scoreContainer h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 23%;
+    text-shadow: 2px 2px 0px #000000;
+    left: 50%;
+}
+
+.score-betweenText {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-shadow: 2px 2px 0px #000000;
+    top: 12%;
+    left: 50%;
+}
+
+.score-spoilerCover {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.score-extraInfo {
+    position: absolute;
+    display: none;
+}
+
+.lobbyScore-extraInfo {
+    position: absolute;
+    display: none;
+}
+
+.lobbyScore-leftScore {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 46%;
+}
+
+.lobbyScore-leftScore img {
+    display: none;
+}
+
+.lobbyScore-rightScore img {
+    display: none;
+}
+
+.lobbyScore-rightScore {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 58%;
+    right: 46%;
+}
+
+.lobbyScore-betweenText {
+    display: none;
+}
+
+.lobbyScore-scoreContainer h1 {
+    font-size: 60px;
+}
+
+/* #endregion*/
+
+/* #region Caster Manager */
+.casterManager-caster1 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 944px;
+    left: 330px;
+}
+
+.casterManager-caster1social {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 990px;
+    left: 330px;
+}
+
+.casterManager-caster2 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(50%, -50%);
+    top: 944px;
+    right: 330px;
+}
+
+.casterManager-caster2social {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(50%, -50%);
+    top: 990px;
+    right: 330px;
+}
+.casterManager-caster2social svg path, .casterManager-caster1social svg path, .casterManager-observerSocial svg path {
+    transform: scale(8);
+    d: path("M5.7 0L1.4 10.985V55.88h15.284V64h8.597l8.12-8.12h12.418l16.716-16.716V0H5.7zm51.104 36.3L47.25 45.85H31.967l-8.12 8.12v-8.12H10.952V5.73h45.85V36.3zM47.25 16.716v16.716h-5.73V16.716h5.73zm-15.284 0v16.716h-5.73V16.716h5.73z") ;
+}
+
+.casterManager-caster2social h1, .casterManager-caster1social h1 {
+    padding-left: 4px;
+}
+
+.casterManager-observer {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 944px;
+    /*top: 965px;*/
+    left: 50%;
+}
+
+.casterManager-observerSocial {
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 990px;
+    /*top: 1000px;*/
+    left: 50%;
+}
+
+.xsvg {
+    fill: white;
+    height: 35px;
+}
+
+/* #endregion */
+
+/* #region Map Selector */
+.mapSelector-mapPicked {
+    width: 140px;
+    margin: 5px 0px;
+    border: 2px solid #0000;
+    border-radius: 4%;
+    background: linear-gradient(#191212, #191212) padding-box, linear-gradient(var(--angle),
+            #9c683b,
+            #FFD700) border-box;
+    animation: 8s rotate linear infinite;
+}
+
+.mapSelector-map {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapSelector-mapName {
+    display: none;
+    position: absolute;
+    padding-top: 100px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.mapSelector-mapPlayed {
+    filter: blur(1px) grayscale(.4) brightness(.4);
+}
+
+.mapSelector-leftSide {
+    top: 60%;
+    left: 10%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.mapSelector-rightSide {
+    top: 60%;
+    right: 10%;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+.mapSelector-mapPicked {
+    width: 140px;
+}
+
+.mapSelector-middleMap {
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.mapSelector-middleMap img {
+    width: 160px;
+}
+
+/* #endregion */
+

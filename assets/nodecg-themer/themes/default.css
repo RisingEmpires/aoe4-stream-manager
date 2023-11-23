@@ -41,6 +41,7 @@ body {
 }
 
 .series-game {
+    width: 183px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -323,6 +324,169 @@ body {
 
 .lobbyScore-scoreContainer h1 {
     font-size: 60px;
+}
+
+/* Team Game Improved Observer UI mod (by kusch_aoe)*/
+.teamGameImprovedObserverUI-extraInfo {
+    position: absolute;
+    display: none;
+}
+
+.teamGameImprovedObserverUI-rightScore img {
+    animation-direction: reverse;
+}
+
+.teamGameImprovedObserverUI-leftScore {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 45%;
+}
+
+.teamGameImprovedObserverUI-rightScore {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 13%;
+    right: 45%;
+}
+
+.teamGameImprovedObserverUI-scoreContainer img {
+    width: 90px;
+}
+
+.teamGameImprovedObserverUI-scoreContainer {
+    color: white;
+}
+
+.teamGameImprovedObserverUI-scoreContainer h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 23%;
+    text-shadow: 2px 2px 0px #000000;
+    left: 50%;
+}
+
+.teamGameImprovedObserverUI-betweenText {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-shadow: 2px 2px 0px #000000;
+    top: 12%;
+    left: 50%;
+}
+
+.teamGameImprovedObserverUI-leftSideIcon {
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 5%;
+    left: 26.5%;
+}
+
+.teamGameImprovedObserverUI-rightSideIcon {
+    width: 80px;
+    height: 80px;
+    transform: translate(50%, -50%);
+    position: absolute;
+    top: 5%;
+    right: 26.5%;
+}
+
+.teamGameImprovedObserverUI-teamName {
+    text-transform: uppercase;
+    color: white;
+    top: 6.4%;
+}
+
+.teamGameImprovedObserverUI-leftName {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 35.9%;
+}
+
+.teamGameImprovedObserverUI-rightName {
+    transform: translate(50%, -50%);
+    position: absolute;
+    right: 35.9%;
+}
+
+/* Team Game Default UI */
+
+.teamGame-scoreContainer h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 23%;
+    text-shadow: 2px 2px 0px #000000;
+    left: 50%;
+}
+
+.teamGame-rightScore img {
+    animation-direction: reverse;
+}
+
+.teamGame-leftScore {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 3.5%;
+    left: 44.7%;
+}
+
+.teamGame-rightScore {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 3.5%;
+    right: 44.7%;
+}
+
+.teamGame-leftScore img, .teamGame-rightScore img {
+    width: 90px;
+}
+
+.teamGame-betweenText {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-shadow: 2px 2px 0px #000000;
+    top: -0.1%;
+    left: 50%;
+    font-size: x-large;
+}
+
+.teamGame-leftSideIcon {
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 4%;
+    left: 26.5%;
+}
+
+.teamGame-rightSideIcon {
+    width: 80px;
+    height: 80px;
+    transform: translate(50%, -50%);
+    position: absolute;
+    top: 4%;
+    right: 26.5%;
+}
+
+.teamGame-teamName {
+    text-transform: uppercase;
+    color: white;
+    top: 0%;
+}
+
+.teamGame-leftName {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 35.9%;
+}
+
+.teamGame-rightName {
+    transform: translate(50%, -50%);
+    position: absolute;
+    right: 35.9%;
 }
 
 /* #endregion*/
